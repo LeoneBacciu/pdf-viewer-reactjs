@@ -13,8 +13,6 @@ export default {
         'jquery',
         'material-design-icons',
         'bootstrap',
-        'bulma',
-        'bulma-helpers',
         'popper.js',
     ],
     plugins: [
