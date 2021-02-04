@@ -11,7 +11,6 @@ export default {
         'react',
         'prop-types',
         'jquery',
-        'material-design-icons',
         'bootstrap',
         'popper.js',
     ],
