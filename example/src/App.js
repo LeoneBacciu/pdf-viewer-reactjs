@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import PDFViewer from 'pdf-viewer-reactjs'
+import PDFViewer from 'index'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
@@ -24,7 +24,9 @@ const FromUrl = () => (
                 document={{
                     url: sources.url,
                 }}
-                showThumbnail={{ scale: 3 }}
+                hideNavbar={true}
+                scale={2}
+                // showThumbnail={{ scale: 3 }}
             />
         </div>
     </div>
@@ -507,48 +509,48 @@ function App() {
             <div className='row my-5'>
                 <FromUrl />
             </div>
-            <div className='row my-5'>
-                <FromBase64 />
-            </div>
-            <div className='row my-5'>
-                <ErrorHandling />
-            </div>
-            <div className='row my-5'>
-                <CustomErrorHandling />
-            </div>
-            <div className='row my-5'>
-                <WithCustomLoader />
-            </div>
-            <div className='row my-5'>
-                <WithCustomStartingPage />
-            </div>
-            <div className='row my-5'>
-                <WithCustomScale />
-            </div>
-            <div className='row my-5'>
-                <WithCustomNavigationStyles />
-            </div>
-            <div className='row my-5'>
-                <WithCustomNavigation />
-            </div>
-            <div className='row my-5'>
-                <WithOnDocumentClick />
-            </div>
-            <div className='row my-5'>
-                <WithoutNavigation />
-            </div>
-            <div className='row my-5'>
-                <WithoutZoomRotation />
-            </div>
-            <div className='row my-5'>
-                <WithNavbarTop />
-            </div>
-            <div className='row my-5'>
-                <WithWatermark />
-            </div>
-            <div className='row my-5'>
-                <WithExternalControl />
-            </div>
+            {/*<div className='row my-5'>*/}
+            {/*    <FromBase64 />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <ErrorHandling />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <CustomErrorHandling />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithCustomLoader />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithCustomStartingPage />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithCustomScale />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithCustomNavigationStyles />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithCustomNavigation />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithOnDocumentClick />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithoutNavigation />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithoutZoomRotation />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithNavbarTop />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithWatermark />*/}
+            {/*</div>*/}
+            {/*<div className='row my-5'>*/}
+            {/*    <WithExternalControl />*/}
+            {/*</div>*/}
         </div>
     )
 }
