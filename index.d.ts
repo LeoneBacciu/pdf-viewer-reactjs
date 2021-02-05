@@ -54,7 +54,7 @@ declare module 'pdf-viewer-reactjs' {
         maxScale?: number;
         minScale?: number;
         css?: string;
-        canvasCss?: string;
+        canvasCss?: React.CSSProperties;
         rotationAngle?: number;
         onDocumentClick?: DocClickHandler;
         onPrevBtnClick?: BtnClickHandler;
