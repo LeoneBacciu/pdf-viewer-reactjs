@@ -327,7 +327,7 @@ PDFViewer.propTypes = {
     maxScale: PropTypes.number,
     minScale: PropTypes.number,
     css: PropTypes.string,
-    canvasCss: PropTypes.string,
+    canvasCss: PropTypes.object,
     rotationAngle: PropTypes.number,
     onDocumentClick: PropTypes.func,
     onPrevBtnClick: PropTypes.func,
@@ -392,7 +392,7 @@ PDFViewer.defaultProps = {
     hideZoom: false,
     hideRotation: false,
     navbarOnTop: false,
-    canvasCss: '',
+    canvasCss: {},
 }
 
 export default PDFViewer
